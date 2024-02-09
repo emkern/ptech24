@@ -43,3 +43,4 @@ let concateneerStrings = (string1, string2) => console.log(string1 + ' ' + strin
 concateneerStrings("halli", "hallo")
 
 /* OPDRACHT 6: Herschrijf functies uit opdracht 1 en 5 naar een arrow functie */
+

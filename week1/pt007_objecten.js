@@ -34,7 +34,10 @@ persoon = {
     leeftijd: 30,
     moe: true,
     hobbies: ["voetbal", "muay thai"],
-    verjaardagVieren: () => this.leeftijd++
+    verjaardagVieren() {
+        this.leeftijd++
+        console.log(this.leeftijd)
+    }
 }
 
 /* OPDRACHT 5: Boodschap loggen */
