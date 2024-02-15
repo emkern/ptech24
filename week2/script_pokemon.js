@@ -1,13 +1,16 @@
 let getPokemon = () => {
 // functiong getPokemon() {
 
-    getData("https://pokeapi.co/api/v2/pokemon?limit=10&offset=0").then(data => {
+    getData("https://pokeapi.co/api/v2/pokemon?limit=1000&offset=0").then(data => {
         // console.log(data.results[0].name)
 
         const allPokemons = data.results
 
-        allPokemons.forEach(pokemon => {
-            console.log(pokemon.name)
+        let cPokemons = allPokemons.filter((pokemon) => pokemon.name.startsWith('c')) 
+        console.log(`${cPokemons.length} pokemon start with a c, they are:`)
+
+        cPokemons.forEach(pokemon => {
+            console.log(`${pokemon.name}`)
         });
     }
 
